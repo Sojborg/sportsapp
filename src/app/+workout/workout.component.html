@@ -1,0 +1,11 @@
+<h3>
+  Workout
+</h3>
+<div class="col-md-6">
+  <div class="col-md-1">Filter</div>
+  <div class="col-md-1">
+    <input [ngModel]="activeworkouttype" (ngModelChange)="actionTypeSearchChanged($event)" type="text" /> {{activeworkouttype}}
+  </div>
+</div>
+<div class="col-md-6">test2</div>
+<app-workout-list (selectedEvent)="setSelectedWorkout($event)"></app-workout-list>

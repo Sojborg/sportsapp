@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Interval run",
+        "type": "Running",
+        "length": 8.2,
+        "time": "38"
+    },
+    {
+        "name": "Cycling hills",
+        "type": "Cycling",
+        "length": 44.3,
+        "time": "100"
+    },
+    {
+        "name": "Interval cycling",
+        "type": "Cycling",
+        "length": 39,
+        "time": "67"
+    },
+    {
+        "name": "Sprint runs",
+        "type": "Running",
+        "length": 6.2,
+        "time": "27"
+    },
+    {
+        "name": "Long run",
+        "type": "Running",
+        "length": 15.4,
+        "time": "100"
+    },
+    {
+        "name": "Interval run",
+        "type": "Running",
+        "length": 8.2,
+        "time": "38"
+    }
+]

@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Length</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr *ngFor="let workout of workouts" (click)="workoutSelected()">
+      <td>{{workout.name}}</td>
+      <td>{{workout.type}}</td>
+      <td>{{workout.length}}</td>
+    </tr>
+  </thead>
+</table>

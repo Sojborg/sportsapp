@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { WorkoutComponent } from './+workout';
-import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
-import { RaceComponent } from './+race';
-import { UsersComponent } from './+users';
-import { Http, HTTP_PROVIDERS  } from '@angular/http'
+import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Http, HTTP_PROVIDERS  } from '@angular/http';
+
 
 @Component({
   moduleId: module.id,
@@ -11,13 +9,8 @@ import { Http, HTTP_PROVIDERS  } from '@angular/http'
   templateUrl: 'sports-app.component.html',
   styleUrls: ['sports-app.component.css'],
   directives: [ROUTER_DIRECTIVES],
-  providers: [ROUTER_PROVIDERS, Http, HTTP_PROVIDERS]
+  providers: [Http, HTTP_PROVIDERS]
 })
-@Routes([
-  {path: '/workout', component: WorkoutComponent},
-  {path: '/race', component: RaceComponent},
-  {path: '/users', component: UsersComponent}
-])
 export class SportsAppAppComponent {
   title = 'sports-app works!';
 }

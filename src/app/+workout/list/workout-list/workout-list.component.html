@@ -8,7 +8,7 @@
   </thead>
   <thead>
     <tr *ngFor="let workout of workouts" (click)="workoutSelected()">
-      <td>{{workout.name}}</td>
+      <td><a [routerLink]="['/workoutdetails', 999]">{{workout.name}}</a></td>
       <td>{{workout.type}}</td>
       <td>{{workout.length}}</td>
     </tr>

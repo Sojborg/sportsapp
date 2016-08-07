@@ -9,7 +9,7 @@ import { Http, HTTP_PROVIDERS  } from '@angular/http';
   templateUrl: 'sports-app.component.html',
   styleUrls: ['sports-app.component.css'],
   directives: [ROUTER_DIRECTIVES],
-  providers: [Http, HTTP_PROVIDERS]
+  providers: [Http, HTTP_PROVIDERS ]
 })
 export class SportsAppAppComponent {
   title = 'sports-app works!';

@@ -5,12 +5,14 @@ import { WorkoutMediator } from '../../shared/workout.mediator';
 import { Observable} from 'rxjs/Observable'
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/mergeAll';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
     moduleId: module.id,
     selector: 'app-workout-list',
     templateUrl: 'workout-list.component.html',
     styleUrls: ['workout-list.component.css'],
+    directives: [ROUTER_DIRECTIVES],
     providers: [WorkoutService]
 })
 export class WorkoutListComponent {

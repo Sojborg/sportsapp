@@ -1,7 +1,8 @@
 ﻿import { provideRouter, RouterConfig } from '@angular/router';
-import { WorkoutComponent } from './+workout';
+import { WorkoutComponent, WorkoutDetailsComponent } from './+workout';
 import { RaceComponent } from './+race';
 import { UsersComponent } from './+users';
+import { AuthGuard } from './auth-guard.service';
 
 const routes: RouterConfig = [
     {
@@ -9,12 +10,17 @@ const routes: RouterConfig = [
         component: WorkoutComponent
     },
     {
+        path: 'workoutdetails/:id',
+        component: WorkoutDetailsComponent
+    },
+    {
         path: 'race',
         component: RaceComponent
     },
     {
         path: 'users',
-        component: UsersComponent
+        component: UsersComponent,
+        canActivate: [AuthGuard]
     }
 ];
 

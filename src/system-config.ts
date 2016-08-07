@@ -33,7 +33,6 @@ const barrels: string[] = [
   'app/+workout',
   'app/+race',
   'app/+users',
-  'app/+workout/list/workout-list',
   /** @cli-barrel */
 ];
 

@@ -10,8 +10,8 @@ import 'rxjs/Rx'
     selector: 'app-workout',
     templateUrl: 'workout.component.html',
     styleUrls: ['workout.component.css'],
-    directives: [WorkoutListComponent],
-    providers: [WorkoutMediator]
+    // directives: [WorkoutListComponent],
+    // providers: [WorkoutMediator]
 })
 export class WorkoutComponent implements OnInit {
     activeworkouttype: string;    

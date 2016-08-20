@@ -11,9 +11,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     moduleId: module.id,
     selector: 'app-workout-list',
     templateUrl: 'workout-list.component.html',
-    styleUrls: ['workout-list.component.css'],
-    directives: [ROUTER_DIRECTIVES],
-    providers: [WorkoutService]
+    styleUrls: ['workout-list.component.css']
 })
 export class WorkoutListComponent {
     private actiontype: string;
